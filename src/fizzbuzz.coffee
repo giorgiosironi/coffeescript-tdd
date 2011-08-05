@@ -8,7 +8,8 @@ buzzRule = newRule("Buzz", 5)
 
 this.fizzbuzz = (number) -> 
   result = ""
-  result = result + fizzRule(number)
-  result = result + buzzRule(number)
+  concatenation = (rule) ->
+    result = result + rule(number)
+  concatenation rule for rule in [fizzRule, buzzRule]
   return result if result
   number
