@@ -1,7 +1,5 @@
-mytest = () -> assertEquals(1, 1)
-
 tests = {
-  "test1is1": mytest
+  "test1is1": () -> assertEquals(1, fizzbuzz(1))
 }
 
 TestCase("tests for fizzbuzz kata", tests)
