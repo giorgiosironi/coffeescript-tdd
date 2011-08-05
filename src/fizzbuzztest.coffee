@@ -8,6 +8,9 @@ tests = {
     assertEquals("Fizz", fizzbuzz(3))
     assertEquals("Fizz", fizzbuzz(6))
     assertEquals("Fizz", fizzbuzz(9))
+  "test multiples of 5 become buzz": ->
+    assertEquals("Buzz", fizzbuzz(5))
+    assertEquals("Buzz", fizzbuzz(10))
 }
 
 TestCase("tests for fizzbuzz kata", tests)
