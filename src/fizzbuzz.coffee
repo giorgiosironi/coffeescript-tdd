@@ -1,4 +1,13 @@
+fizzRule = (number) ->
+    return "Fizz" if number % 3 == 0
+    ""
+buzzRule = (number) ->
+    return "Buzz" if number % 5 == 0
+    ""
+
 this.fizzbuzz = (number) -> 
-  return "Fizz" if number % 3 == 0
-  return "Buzz" if number % 5 == 0
+  result = ""
+  result = result + fizzRule(number)
+  result = result + buzzRule(number)
+  return result if result
   number
