@@ -1,9 +1,10 @@
-fizzRule = (number) ->
-    return "Fizz" if number % 3 == 0
+newRule = (word, divisor) ->
+  (number) -> 
+    return word if number % divisor == 0
     ""
-buzzRule = (number) ->
-    return "Buzz" if number % 5 == 0
-    ""
+
+fizzRule = newRule("Fizz", 3)
+buzzRule = newRule("Buzz", 5)
 
 this.fizzbuzz = (number) -> 
   result = ""
